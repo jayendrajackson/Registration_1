@@ -34,7 +34,6 @@ const retriveEntries = () => {
 };
 
 let Entries = retriveEntries();
-
 const displayEntries = () => {
   const entries = retriveEntries();
 
@@ -45,7 +44,6 @@ const displayEntries = () => {
       const password = `<td class="td">${entry.password}</td>`;
       const dob = `<td class="td">${entry.dob}</td>`;
       const acceptTerms = `<td class="td">${entry.acceptTerms}</td>`;
-
       const row = `<tr>${name} ${email} ${password} ${dob} ${acceptTerms}</tr>`;
       return row;
     })
